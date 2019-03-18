@@ -1,0 +1,325 @@
+body {
+  background: #fff; }
+
+.nav {
+  position: relative;
+  font-family: FZYOUH_508R--GB1-4;
+  display: block;
+  width: 100%;
+  height: 78px;
+  line-height: 78px;
+  background: #fff;
+  padding: 0 65px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 16px; }
+  .nav nav {
+    width: 894px;
+    margin: 0 auto;
+    height: 100%; }
+    .nav nav ul {
+      float: left;
+      display: flex; }
+      .nav nav ul li a {
+        font-family: MyriadPro-Regular;
+        height: 78px;
+        line-height: 78px;
+        font-size: 14px;
+        color: #7f7f7f;
+        margin-right: 27px; }
+    .nav nav .zyqh {
+      text-align: center;
+      float: right;
+      position: relative;
+      color: #7f7f7f;
+      font-size: 14px; }
+      .nav nav .zyqh span {
+        height: 0;
+        width: 0;
+        display: inline-block;
+        border: 5px solid transparent;
+        border-top-color: #7f7f7f;
+        margin-left: 10px;
+        margin-bottom: -1px; }
+      .nav nav .zyqh .changeBox {
+        width: 110px;
+        background: #fff;
+        border-radius: 5px;
+        position: absolute;
+        z-index: 20;
+        top: 60px;
+        right: 0;
+        overflow: hidden;
+        display: none;
+        -webkit-box-shadow: 1px 1px 2px 0 #d3d3d3;
+        box-shadow: 1px 1px 2px 0 #d3d3d3; }
+        .nav nav .zyqh .changeBox div {
+          padding: 5px 20px;
+          cursor: pointer;
+          height: 40px;
+          line-height: 40px; }
+        .nav nav .zyqh .changeBox div:hover {
+          background: #f9fafc; }
+
+.cont {
+  width: 100%; }
+  .cont .cont_bt {
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden; }
+    .cont .cont_bt p {
+      font-size: 20px;
+      color: #000;
+      text-align: center;
+      letter-spacing: 0;
+      margin-top: 70px;
+      font-weight: 600; }
+  .cont .login {
+    width: 960px;
+    margin: 0 auto; }
+    .cont .login .login_cont {
+      width: 442px;
+      min-height: 488px;
+      margin: 0 auto;
+      background: #f7f7f7;
+      overflow: hidden;
+      margin-top: 44px; }
+      .cont .login .login_cont .tab {
+        font-family: sans-serif;
+        font-weight: 500;
+        display: table;
+        margin: 34px auto 47px;
+        width: 320px;
+        height: 21px;
+        line-height: 21px;
+        font-size: 21px;
+        color: #000;
+        text-align: center; }
+        .cont .login .login_cont .tab .tab_noe {
+          color: #2ad181;
+          position: relative; }
+        .cont .login .login_cont .tab .tab_noe:after {
+          content: "";
+          width: 2px;
+          height: 15px;
+          position: absolute;
+          right: 0;
+          top: 3px;
+          background: #d8d8d8; }
+        .cont .login .login_cont .tab .tab_two {
+          display: table-cell;
+          opacity: .7; }
+      .cont .login .login_cont .login_input {
+        text-align: center;
+        padding: 0 53px;
+        position: relative; }
+        .cont .login .login_cont .login_input .phone_qh {
+          display: none;
+          position: absolute;
+          top: 0;
+          left: 78px;
+          width: 77px;
+          text-align: center;
+          line-height: 48px;
+          height: 48px;
+          padding-right: 22px;
+          box-sizing: border-box;
+          z-index: 10; }
+          .cont .login .login_cont .login_input .phone_qh i {
+            position: absolute;
+            top: 20px;
+            right: 8px;
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border: 8px solid transparent;
+            border-top-color: #f7f7f7; }
+        .cont .login .login_cont .login_input form {
+          display: flex;
+          flex-direction: column;
+          position: relative; }
+          .cont .login .login_cont .login_input form input {
+            width: 285px;
+            height: 48px;
+            margin: 0 auto;
+            border-radius: 9px;
+            box-sizing: border-box;
+            text-indent: 16px;
+            font-size: 14px;
+            color: #000;
+            margin-bottom: 10px;
+            border: none;
+            outline: medium; }
+        .cont .login .login_cont .login_input .icon-yincangmima {
+          position: absolute;
+          bottom: 20px;
+          right: 40px;
+          font-size: 22px;
+          color: #d1d1d1; }
+        .cont .login .login_cont .login_input .login_wj {
+          width: 285px;
+          margin: 6px auto 45px;
+          text-align: right;
+          height: 17px; }
+          .cont .login .login_cont .login_input .login_wj a {
+            color: #5a6e97;
+            font-size: 12px;
+            float: left; }
+          .cont .login .login_cont .login_input .login_wj a:last-of-type {
+            float: right; }
+          .cont .login .login_cont .login_input .login_wj a:hover {
+            opacity: .8; }
+        .cont .login .login_cont .login_input .but, .cont .login .login_cont .login_input .login_sm .codeContent .code_success .secondary_btn, .cont .login .login_cont .login_sm .codeContent .code_success .login_input .secondary_btn {
+          width: 285px;
+          position: relative;
+          display: block;
+          height: 48px;
+          line-height: 48px;
+          margin: 9px auto;
+          text-align: center;
+          background-color: #2ad181;
+          border: none;
+          outline: none;
+          border-radius: 9px;
+          font-size: 15px;
+          color: #fff; }
+        .cont .login .login_cont .login_input .zc {
+          background: transparent;
+          color: #2ad181; }
+      .cont .login .login_cont .login_fx {
+        margin: 20px auto;
+        text-align: center; }
+        .cont .login .login_cont .login_fx .login_fx_bt {
+          font-family: FZYOUH_508R--GB1-4;
+          font-size: 12px;
+          line-height: 1;
+          color: #9b9b9b;
+          position: relative;
+          width: 72px;
+          margin: 0 auto; }
+        .cont .login .login_cont .login_fx .login_fx_bt::before {
+          content: "";
+          position: absolute;
+          top: 6px;
+          width: 32px;
+          height: 1px;
+          background: #c5c5c5;
+          left: -47px; }
+        .cont .login .login_cont .login_fx .login_fx_bt::after {
+          content: "";
+          position: absolute;
+          top: 6px;
+          width: 32px;
+          height: 1px;
+          background: #c5c5c5;
+          right: -47px; }
+        .cont .login .login_cont .login_fx .login_fx_fs {
+          margin: 15px auto 32px; }
+          .cont .login .login_cont .login_fx .login_fx_fs span {
+            font-size: 28px; }
+          .cont .login .login_cont .login_fx .login_fx_fs .qq {
+            margin-right: 15px;
+            color: #7ad0ff; }
+          .cont .login .login_cont .login_fx .login_fx_fs .wx {
+            color: #7fe0ae; }
+      .cont .login .login_cont .login_sm {
+        display: none; }
+        .cont .login .login_cont .login_sm .codeContent {
+          margin: 75px auto 0;
+          text-align: center; }
+          .cont .login .login_cont .login_sm .codeContent .codeImg {
+            height: 180px; }
+            .cont .login .login_cont .login_sm .codeContent .codeImg img {
+              width: 180px;
+              height: 180px; }
+            .cont .login .login_cont .login_sm .codeContent .codeImg .code_url {
+              margin-right: 15px; }
+          .cont .login .login_cont .login_sm .codeContent .code_expired {
+            height: 180px;
+            background-image: url(../imgs/index/login/code_expired.762804f4.png);
+            background-position: 50%;
+            background-size: contain;
+            background-repeat: no-repeat; }
+            .cont .login .login_cont .login_sm .codeContent .code_expired p {
+              opacity: .7;
+              font-family: sans-serif;
+              font-weight: 500;
+              font-size: 18px;
+              color: #000;
+              padding-top: 54px;
+              margin-bottom: 15px; }
+            .cont .login .login_cont .login_sm .codeContent .code_expired .buttonInline {
+              font-family: sans-serif;
+              font-weight: 500;
+              position: relative;
+              display: inline-block;
+              width: 110px;
+              height: 48px;
+              line-height: 48px;
+              text-align: center;
+              background: transparent;
+              background: #2ad181;
+              border: none;
+              outline: none;
+              border-radius: 9px;
+              border: 1px solid #2ad181;
+              -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+              font-size: 15px;
+              color: #fff;
+              white-space: nowrap;
+              -webkit-appearance: none;
+              cursor: pointer;
+              -webkit-transition: .1s;
+              transition: .1s; }
+          .cont .login .login_cont .login_sm .codeContent .code_tip {
+            text-align: center;
+            margin-top: 45px;
+            opacity: .7;
+            font-family: sans-serif;
+            font-weight: 500;
+            font-size: 15px;
+            color: #000; }
+          .cont .login .login_cont .login_sm .codeContent .code_success .icon-duigou {
+            color: #2ad181;
+            font-size: 84px; }
+          .cont .login .login_cont .login_sm .codeContent .code_success p {
+            font-family: sans-serif;
+            font-size: 24px;
+            color: #000;
+            line-height: 1; }
+          .cont .login .login_cont .login_sm .codeContent .code_success .code_success_tip {
+            padding-top: 16px;
+            opacity: .7;
+            font-family: FZYOUH_510M--GB1-4;
+            font-size: 18px;
+            color: #000;
+            margin-bottom: 15px;
+            line-height: 1; }
+          .cont .login .login_cont .login_sm .codeContent .code_success .secondary_btn {
+            font-weight: 500;
+            font-size: 21px;
+            margin-top: 103px;
+            color: #2ad181;
+            background: transparent;
+            border: none;
+            margin-bottom: 10px; }
+
+.hide {
+  display: none; }
+
+.foot {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 57px; }
+  .foot p {
+    font-family: MyriadPro-Regular;
+    font-size: 12px;
+    color: #9b9b9b;
+    text-align: center; }
+    .foot p span {
+      margin-left: 5px; }
+
+/*# sourceMappingURL=register.css.map */

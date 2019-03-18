@@ -1,0 +1,441 @@
+/* 导航 */
+header{
+	margin-bottom: 52px;
+}
+.nav{
+	width: 1200px;
+	height: 60px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+    z-index: 3;
+    margin-left: -600px;
+}
+.caiDan{
+	display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60px;
+    z-index: 5
+}
+.log{
+	float: left;
+}
+.log a{
+	width: 106px;
+	height: 60px;
+	line-height: 60px;
+	left: 82px;
+}
+.nav_box{
+	display: inline-block;
+}
+.nav_cd{
+	width: auto;
+	list-style: none;
+	display: inline-block;
+	margin-left: 84px;
+}
+.nav_cd li{
+	float: left;
+	height: 60px;
+}
+.nav_cd li a{
+	margin: 0 25px;
+	line-height: 60px;
+	color: #333;
+	font-size: 16px;
+}
+.nav_gw{
+	line-height: 60px;
+	padding: 0 10px;
+	float: right;
+	color: #1a1a1a;
+}
+.icon-gouwudai{
+	font-size: 22px;
+}
+.nav_gw_xlb{
+	display: inline-block;
+    position: absolute;
+    top: 60px;
+    right: -149px;
+	opacity: 0;
+    display: none;
+}
+.nav_gw_xlb section{
+	position: relative;
+    width: 336px;
+    background-color: #fff;
+}
+.nav_gw_xlb section div{
+	position: absolute;
+    width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-bottom-color: #fff;
+	top: -18px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.nav_gw_xlb ul{
+	display: block;
+    overflow: hidden;
+    padding: 10px 0;
+}
+.nav_gw_xlb ul li a{
+	display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 15px;
+    color: #333;
+    -webkit-transition: color 0.35s ease;
+    transition: color 0.35s ease;
+}
+.nav_gw_xlb ul li span{
+	display: inline-block;
+    margin: 0 20px 0 10px;
+    font-size: 20px;
+	float: left;
+}
+.nav_gw_xlb ul li{
+	display: block;
+    padding: 18px 0;
+    margin: 0 28px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px rgba(0,0,0,0.082) solid;
+}
+.nav_gw_xlb ul li h3{
+	display: inline-block;
+    vertical-align: middle;
+	font-weight: 100;
+	font-size: 15px;
+}
+/* banner */
+.banner{
+	width: 100%;
+	height: 600px;
+	overflow: hidden;
+	position: relative;
+}
+.banner li{
+	list-style: none;
+	/* float: left; */ 
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+.banner li img{
+	height: 100%;
+	width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+.bt{
+	position: absolute;
+	right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+	text-align: center;
+}
+.bt h2{
+	font-size: 40px;
+	color: #333;
+}
+.bt h3{
+	font-size: 18px;
+	color: #666;
+	line-height: 66px;
+}
+.bt div{
+	width: 124px;
+	height: 36px;
+	background: #05b570;
+	border-radius: 18px;
+	line-height: 36px;
+	margin: 0 auto;
+}
+.bt a{
+	font-size: 16px;
+	color: #fff;
+}
+.bt section{
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.banner_nav{
+	position: absolute;
+    left: 50%;
+    bottom: 30px;
+	transform:translate(-50%);
+    z-index: 2;
+}
+.banner_nav a{
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #757f8c;
+	float: left;
+	margin:0 14px;
+}
+/* 主体 推荐商品 */
+.cont{
+	display: block;
+    width: 900px;
+    margin: 0 auto;
+}
+.shop_content{
+	width: 894px;
+	height: 480px;
+	margin: 0 auto;
+	position: relative;
+	margin-bottom: 20px;
+}
+.shop_tup{
+	display: flex;
+    width: 100%;
+    height: 100%;
+	overflow: hidden;
+}
+.shop_tup li{
+	flex: 100%;
+    flex-shrink: 0;
+}
+.shop_tup img{
+	width: 100%;
+	height: 100%;
+}
+.shop_fq{
+	width: 80px;
+	height: 30px;
+	color: #ec9650;
+	font-size: 16px;
+	border-radius: 2px;
+	border: 1px solid #f79a47;
+	text-align: center;
+	line-height: 30px;
+	background: #716ac5;
+	position: absolute;
+	left: 40px;
+	top: 40px;
+}
+.shop_bt{
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.shop_bt section{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #fff;
+	text-align: center;
+}
+.shop_xy_tp{
+		display: none;
+}
+.shop_bt h3{
+	font-size: 16px;	
+}
+.shop_bt h2{
+	font-size: 32px;
+	line-height:62px;
+}
+.shop_bt .shop_doudou{
+	margin-top: 14px;
+	position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+.shop_bt .shop_doudou li{
+	width: 24px;
+	height: 24px;
+	border: 2px solid transparent;
+	border-radius: 50%;
+	float: left;	
+	position: relative;
+}
+.shop_bt .shop_doudou li:first-child{
+	border-color: #a37afe;
+}
+.shop_bt .shop_doudou li a{
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background: #006d6a;
+	border-radius: 50%;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	margin-top: -7px;
+	margin-left: -7px;
+}
+.shop_bt .shop_doudou li:first-child a{
+	background-color: rgb(163, 122, 254);
+	background-image: linear-gradient(to right bottom, rgb(163, 122, 254), rgb(108, 230, 226));
+}
+.shop_bt span{
+	display: inline-block;
+	font-size: 14px;
+	color: #fff;
+	margin-top: 100px;
+	margin-bottom: 22px;
+}
+.shop_btn{
+	width: 148px;
+	height: 44px;
+	background: #05b570;
+	border-radius: 24px;
+	margin: 0 auto;
+}
+.shop_btn a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	font-size: 18px;
+	line-height: 44px;
+}
+.shop_two_fq{
+	background: #5d4024;
+	color: #f69946;
+}
+.shop_two_bt{
+	left: 0;
+}
+.shop_two_bt .shop_doudou li:nth-of-type(1){
+	border-color: rgb(85, 77, 255);
+}
+.shop_two_bt .shop_doudou li:nth-of-type(1) a{
+	background-color: rgb(26, 73, 216);
+    background-image: linear-gradient(to right bottom, rgb(26, 73, 216), rgb(170, 37, 164));
+}
+.shop_two_bt .shop_doudou li:nth-of-type(2) a{
+	background: #3f3f3f;
+}
+.shop_two_bt .shop_doudou li:nth-of-type(3) a{
+	background: #839c9e;
+}
+.shop_two_bt .shop_doudou li:nth-of-type(4) a{
+	background: #9d152b;
+}
+.shop_content_three{
+	margin-bottom: 38px;
+}
+.shop_three_fq{
+	background: #2e3c56;
+}
+.shop_tree .shop_doudou li:nth-of-type(1){
+	border-color: rgb(0, 240, 232);
+}
+.shop_tree .shop_doudou li:nth-of-type(1) a{
+	background-color: rgb(0, 240, 232);
+	background-image: linear-gradient(to right bottom, rgb(0, 240, 232), rgb(2, 19, 92));
+}
+.shop_tree .shop_doudou li:nth-of-type(2) a{
+	background-color: rgb(255, 232, 184);
+    background-image: linear-gradient(to right bottom, rgb(255, 232, 184), rgb(255, 158, 154));
+}
+.shop_tree .shop_doudou li:nth-of-type(3) a{
+	background-color: rgb(240, 0, 117);
+    background-image: linear-gradient(to right bottom, rgb(240, 0, 117), rgb(45, 1, 157));
+}
+.shop_tree .shop_doudou li:nth-of-type(4) a{
+	background-color: rgb(194, 69, 239);
+    background-image: linear-gradient(to right bottom, rgb(194, 69, 239), rgb(95, 212, 247));
+}
+/* 更多商品 */
+.cont_gengDuo{
+	display: flex;
+	flex-wrap: wrap;
+	overflow: hidden;
+}
+.cont_gengDuo a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.cont_gengDuo .shop_lei{
+	flex: 48%;
+	background: #fff;
+}
+.cont_gengDuo .shop_lei img{
+	width: 100%;
+	height: 100%;
+}
+.shop_lei{
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+}
+.shop_tu{
+	display: flex;
+}
+.shop_tu li{
+	float: left;
+	max-width: 438px;
+	max-height: 280px;
+	flex-shrink: 0;
+}
+.shop_lei span{
+	display: inline-block;
+	width: 80px;
+	height: 30px;
+	background: #fef0e3;
+	font-size: 16px;
+	color: #f79a47;
+	border-radius: 2px;
+	border: 1px solid #f79a47;
+	position: absolute;
+	left: 40px;
+	top: 40px;
+	text-align: center;
+	line-height: 30px;
+}
+.shop_xinXi ul{
+	display: inline-block;
+}
+.shop_xinXi ul li{
+	width: 26px;
+	height: 26px;
+	border-radius: 50%;
+	float: left;
+	position: relative;
+}
+.shop_xinXi ul li:first-child{
+	border:1px solid rgb(11, 179, 215);
+}
+.shop_xinXi ul li i{
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background-color: rgb(8, 13, 16);
+    background-image: linear-gradient(to right bottom, rgb(8, 13, 16), rgb(11, 179, 215));
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -7px;
+	margin-top: -7px;
+}
+.shop_xinXi ul li:nth-of-type(2) a{
+	background-color: rgb(122, 122, 122);
+    background-image: linear-gradient(to right bottom, rgb(122, 122, 122), rgb(0, 0, 0));
+}
+
+.shop_xinXi ul li:nth-child(3) a{
+	background-color: rgb(12, 8, 14);
+    background-image: linear-gradient(to right bottom, rgb(12, 8, 14), rgb(226, 28, 125));
+}
