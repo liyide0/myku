@@ -77,21 +77,19 @@ window.onload = function(){
 			$("#pass_zcqr").eq(0).attr({"type":"text"});
 		}
 	});
-	//判断是否登录成功
-	$("#login_btn").click(function(){
-		$.post("php/login.php", {"userId":'$("#phone")[0]',"passId":'$("#pass")[0]'},loginCg);
+	//判断是否注册成功
+	$("#but").click(function(){
+		$.post("php/register.php", {"userPhone":$("#phone").val(),"userPass":$("#pass").val()},loginCg);
+		alert($("#phone").val());
+		alert($("#pass").val());
 	});
 	//成功后执行
 	function loginCg(data){
 		if(data == "1"){
 			$(".loginTips").eq(0).css({"opacity":0});
-			location.href="mall.html";
+			location.href="../login.html";
 		}else{
 			$(".loginTips").eq(0).css({"opacity":1});
 		}
 	}
-	//点击注册跳转页面
-	$(".zc").click(function(){
-		location.href="register.html";
-	});
 }
