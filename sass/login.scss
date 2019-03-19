@@ -149,12 +149,12 @@ body{
 					z-index: 10;
 					i{
 						position: absolute;
-						top: 20px;
+						top: 22px;
 						right: 8px;
 						display: inline-block;
 						width: 0;
 						height: 0;
-						border: 8px solid transparent;
+						border: 6px solid transparent;
 						border-top-color:#7f7f7f; 
 					}
 				}
@@ -166,6 +166,73 @@ body{
 					height: 12px;
 					width: 1px;
 					background: #d8d8d8;
+				}
+				.zone_search{
+					position: relative;
+				}
+				.gj{
+					background: #fff;
+					width: 285px;
+					height: 320px;
+					position: absolute;
+					overflow-x: hidden;
+					overflow-y: scroll;
+					z-index: 999;
+					padding: 8px 10px;
+					box-sizing: border-box;
+					border: 1px solid #f7f7f7;
+					border-radius: 9px;
+					margin-top: 9px;
+					top: 49px;
+					left: 50%;
+					transform: translate(-50%);
+					display: none;
+					.icon-sousuo-copy{
+						position: absolute;
+						top: 8px;
+						left: 12px;
+					}
+					input{
+						width: 100%;
+						background-color: #f7f7f7;
+						border: none;
+						outline: none;
+						text-indent: 34px;
+						color: #9b9b9b;
+						height: 34px;
+						box-sizing: border-box;
+						border-radius: 9px;
+					}
+					.gj_szm{
+						font-size: 14px;
+						height: 40px;
+						line-height: 40px;
+						padding: 0 16px;
+						color: #4d4d4d;
+						box-sizing: border-box;
+						border-bottom: 1px solid #efefef;
+						text-align: left;
+					}
+					ul{
+						padding: 0 16px;
+						li{
+							height: 40px;
+							line-height: 40px;
+							font-size: 14px;
+							color: #000;
+							text-align: left;
+							span{
+								float: right;
+								color: #999;
+							}
+						}
+						li:hover{
+							color: #d8d8d8;
+						}
+						li:hover span{
+							color: #d8d8d8;
+						}
+					}
 				}
 				form{
 					display: flex;
