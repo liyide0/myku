@@ -119,6 +119,62 @@ body {
           padding: 0 10px 0 90px;
           text-indent: 16px;
           border: none; }
+        .cont .register .register_cont .register_gj .gj {
+          background: #f7f7f7;
+          width: 342px;
+          height: 320px;
+          position: absolute;
+          overflow-x: hidden;
+          overflow-y: scroll;
+          z-index: 999;
+          padding: 8px 10px;
+          box-sizing: border-box;
+          border: 1px solid #f7f7f7;
+          border-radius: 9px;
+          margin-top: 9px;
+          top: 49px;
+          left: 50%;
+          transform: translate(-50%);
+          display: none; }
+          .cont .register .register_cont .register_gj .gj .icon-sousuo-copy {
+            position: absolute;
+            top: 18px;
+            left: 20px; }
+          .cont .register .register_cont .register_gj .gj input {
+            padding: 0;
+            width: 100%;
+            background-color: #fff;
+            border: none;
+            outline: none;
+            text-indent: 34px;
+            color: #9b9b9b;
+            height: 34px;
+            box-sizing: border-box;
+            border-radius: 9px; }
+          .cont .register .register_cont .register_gj .gj .gj_szm {
+            font-size: 14px;
+            height: 40px;
+            line-height: 40px;
+            padding: 0 16px;
+            color: #4d4d4d;
+            box-sizing: border-box;
+            border-bottom: 1px solid #efefef;
+            text-align: left; }
+          .cont .register .register_cont .register_gj .gj ul {
+            padding: 0 16px; }
+            .cont .register .register_cont .register_gj .gj ul li {
+              height: 40px;
+              line-height: 40px;
+              font-size: 14px;
+              color: #000;
+              text-align: left; }
+              .cont .register .register_cont .register_gj .gj ul li span {
+                float: right;
+                color: #999; }
+            .cont .register .register_cont .register_gj .gj ul li:hover {
+              color: #d8d8d8; }
+            .cont .register .register_cont .register_gj .gj ul li:hover span {
+              color: #d8d8d8; }
         .cont .register .register_cont .register_gj .zoneInput_down {
           position: absolute;
           top: 22px;
@@ -160,6 +216,62 @@ body {
           height: 0;
           border: 8px solid transparent;
           border-top-color: #f7f7f7; }
+      .cont .register .register_cont .phone_gj {
+        background: #f7f7f7;
+        width: 342px;
+        height: 320px;
+        position: absolute;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        z-index: 999;
+        padding: 8px 10px;
+        box-sizing: border-box;
+        border: 1px solid #f7f7f7;
+        border-radius: 9px;
+        margin-top: 9px;
+        top: 49px;
+        left: 50%;
+        transform: translate(-50%);
+        display: none; }
+        .cont .register .register_cont .phone_gj .icon-sousuo-copy {
+          position: absolute;
+          top: 18px;
+          left: 20px; }
+        .cont .register .register_cont .phone_gj input {
+          padding: 0;
+          width: 100%;
+          background-color: #fff;
+          border: none;
+          outline: none;
+          text-indent: 34px;
+          color: #9b9b9b;
+          height: 34px;
+          box-sizing: border-box;
+          border-radius: 9px; }
+        .cont .register .register_cont .phone_gj .gj_szm {
+          font-size: 14px;
+          height: 40px;
+          line-height: 40px;
+          padding: 0 16px;
+          color: #4d4d4d;
+          box-sizing: border-box;
+          border-bottom: 1px solid #efefef;
+          text-align: left; }
+        .cont .register .register_cont .phone_gj ul {
+          padding: 0 16px; }
+          .cont .register .register_cont .phone_gj ul li {
+            height: 40px;
+            line-height: 40px;
+            font-size: 14px;
+            color: #000;
+            text-align: left; }
+            .cont .register .register_cont .phone_gj ul li span {
+              float: right;
+              color: #999; }
+          .cont .register .register_cont .phone_gj ul li:hover {
+            color: #d8d8d8; }
+          .cont .register .register_cont .phone_gj ul li:hover span {
+            color: #d8d8d8; }
       .cont .register .register_cont input {
         display: block;
         width: 100%;

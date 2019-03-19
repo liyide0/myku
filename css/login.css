@@ -236,6 +236,13 @@ body {
             float: right; }
           .cont .login .login_cont .login_input .login_wj a:hover {
             opacity: .8; }
+        .cont .login .login_cont .login_input .loginTips {
+          width: 285px;
+          margin: 23px auto 0;
+          font-size: 12px;
+          color: #ec5b66;
+          text-align: center;
+          opacity: 0; }
         .cont .login .login_cont .login_input .but, .cont .login .login_cont .login_input .login_sm .codeContent .code_success .secondary_btn, .cont .login .login_cont .login_sm .codeContent .code_success .login_input .secondary_btn {
           width: 285px;
           position: relative;

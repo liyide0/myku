@@ -18,7 +18,7 @@
 				</ul>
 				<div class="zyqh">
 					简体中文
-					<span></span>
+					<span id="zyqh_btu"></span>
 					<div class="changeBox">
 						<div>简体中文</div>
 						<div>English</div>
@@ -37,14 +37,26 @@
 						<div class="zoneInput_country">国家/地区</div>
 						<input autocomplete="off" class="zoneInput_select" type="text" disabled="" value="中国">
 						<i class="zoneInput_down"></i>
+						<div id="gj" class="gj">
+							<div class="zone_search">
+								<span class="iconfont icon-sousuo-copy"></span>
+								<input id="ss" type="text" autocomplete="off" class="zone_dlg_search" placeholder="搜索国家和地区">
+							</div>
+						</div>
 					</div>
 					<p class="region_tip">成功注册帐号后，国家/地区将不可更改</p>
 					<div class="register_phone">
 						<div class="phone_qh">
 							+86
-							<i></i>
+							<i id="xlb"></i>
 						</div>
-						<input type="text" name="phone" placeholder="手机号码或者邮箱" />
+						<input id="phone" type="text" name="phone" placeholder="手机号码或者邮箱" />
+						<div id="phone_gj" class="gj phone_gj">
+							<div class="zone_search">
+								<span class="iconfont icon-sousuo-copy"></span>
+								<input id="phone_ss" type="text" autocomplete="off" class="zone_dlg_search" placeholder="搜索国家和地区">
+							</div>
+						</div>
 					</div>
 					<div class="input codes codeWrap">
 						<input autocomplete="off" type="text" placeholder="请输入验证码" value="">
@@ -52,13 +64,13 @@
 						<div class="input_error_tip"></div>
 					</div>
 					<div class="pass input">
-						<input type="password" name="pass" placeholder="请输入密码" />
-						<span class="iconfont icon-yincangmima"></span>
+						<input id="pass" type="password" name="pass" placeholder="请输入密码" />
+						<span id="pass_ycxs" class="iconfont icon-yincangmima"></span>
 					</div>
 					<p class="region_tip">密码由6-16位数字、字母或符号组成、至少包含两种字符</p>
 					<div class="pass input">
-						<input type="password" name="pass" placeholder="请再次输入密码" />
-						<span class="iconfont icon-yincangmima"></span>
+						<input id="pass_zcqr" type="password" name="pass" placeholder="请再次输入密码" />
+						<span id="pass_zc" class="iconfont icon-yincangmima"></span>
 					</div>
 					<div class="agreements">
 						<input class="fx" type="checkbox"/>
@@ -81,3 +93,5 @@
 		</footer>
 	</body>
 </html>
+<script type="text/javascript" src="js/register.js"></script>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>

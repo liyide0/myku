@@ -30,6 +30,9 @@ gulp.task("watchall",async ()=>{
 	gulp.watch("css/*.css",async ()=>{
 		gulp.src("css/*.css").pipe(gulp.dest("D:\\phpStudy\\WWW\\oppo\\css"));
 	});
+	gulp.watch("php/*.php",async ()=>{
+		gulp.src("php/*.php").pipe(gulp.dest("D:\\phpStudy\\WWW\\oppo\\php"));
+	});
 	gulp.watch("imgs/**/*.{jpg,png}",async ()=>{
 		gulp.src("imgs/**/*.{jpg,png}").pipe(gulp.dest("D:\\phpStudy\\WWW\oppo\\imgs"));
 	});

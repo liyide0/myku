@@ -3,13 +3,28 @@ window.onload = function(){
 	$("#zyqh_btu").click(function(){
 		$(".changeBox").eq(0).toggle();
 	});
-	//输入内容显示地区
+	//显示国家
+	$(".zoneInput_down").click(function(){
+		$("#gj").eq(0).toggle();
+	});
+	let boxDom = document.getElementById("gj");
+	let arr = ["A","B","C","D","E","F","G","H","J","K","L","M","N","O"];
+	for(let i=0;i<15;i++){
+		gj(boxDom,17,arr[i]);
+	}
+	//在输入框输入首字母显示地区
+	$("#ss").focus(function(){
+		$(this).keyup(function(){
+			
+		});
+	});
+	//输入手机号显示地区
 	$("#phone").change(function(){
 		if($("#phone").val().length >= 6){
 			$(this).css({"text-indent":"82px"});
 			$(".phone_qh").eq(0).css({"display":"block"});
 			$("#xlb").click(function(){
-				$("#gj").eq(0).toggle();
+				$("#phone_gj").eq(0).toggle();
 			});
 		}else{
 			$(this).css({"text-indent":"13px"});
@@ -18,13 +33,12 @@ window.onload = function(){
 		}
 	});
 	//选择地区(动态创建)
-	let boxDom = document.getElementById("gj");
-	let arr = ["A","B","C","D","E","F","G","H","J","K","L","M","N","O"];
+	let phoneBoxDom = document.getElementById("phone_gj");
 	for(let i=0;i<15;i++){
-		gj(boxDom,17,arr[i]);
+		gj(phoneBoxDom,17,arr[i]);
 	}
 	//在输入框输入首字母显示地区
-	$("#ss").focus(function(){
+	$("#phont_ss").focus(function(){
 		$(this).keyup(function(){
 			
 		});
@@ -56,14 +70,12 @@ window.onload = function(){
 			$("#pass").eq(0).attr({"type":"text"});
 		}
 	});
-	//切换登录方式
-	$(".tab_two").eq(0).click(function(){
-		$("#sm").eq(0).css({"display":"block"});
-		$("div.login_input,div.login_fx").css({"display":"none"});
-	});
-	$(".tab_noe").eq(0).click(function(){
-		$("#sm").eq(0).css({"display":"none"});
-		$("div.login_input,div.login_fx").css({"display":"block"});
+	$("#pass_zc").click(function(){
+		if($("#pass_zcqr").eq(0).attr("type") == "text"){
+			$("#pass_zcqr").eq(0).attr({"type":"pawssword"});
+		}else{
+			$("#pass_zcqr").eq(0).attr({"type":"text"});
+		}
 	});
 	//判断是否登录成功
 	$("#login_btn").click(function(){
