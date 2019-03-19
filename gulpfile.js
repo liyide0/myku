@@ -2,9 +2,9 @@ let gulp = require('gulp');//等价于HTML代码：<script src='gulp.js'>
 //合并
 let concat = require('gulp-concat');
 //压缩js
-let uglify = require('gulp-uglify');
+// let uglify = require('gulp-uglify');
 //重命名
-let rename = require('gulp-rename');
+// let rename = require('gulp-rename');
 //压缩css
 let minfyCss = require('gulp-minify-css');
 //图片
@@ -34,8 +34,8 @@ gulp.task("watchall",async ()=>{
 		gulp.src("imgs/**/*.{jpg,png}").pipe(gulp.dest("D:\\phpStudy\\WWW\oppo\\imgs"));
 	});
 	gulp.watch(["js/*.js"],async ()=>{
-		gulp.src(["js/*.js"])
-		.pipe(uglify())
+		gulp.src("js/*.js")
+		// .pipe(uglify())
 		.pipe(gulp.dest("D:\\phpStudy\\WWW\\oppo\\js"));
 	});
 	gulp.watch("css/*.css",async ()=>{

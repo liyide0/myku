@@ -95,7 +95,8 @@ body {
         line-height: 21px;
         font-size: 21px;
         color: #000;
-        text-align: center; }
+        text-align: center;
+        cursor: pointer; }
         .cont .login .login_cont .tab .tab_noe {
           color: #2ad181;
           position: relative; }
@@ -134,7 +135,15 @@ body {
             width: 0;
             height: 0;
             border: 8px solid transparent;
-            border-top-color: #f7f7f7; }
+            border-top-color: #7f7f7f; }
+        .cont .login .login_cont .login_input .phone_qh::after {
+          content: "";
+          position: absolute;
+          right: 0;
+          top: 18px;
+          height: 12px;
+          width: 1px;
+          background: #d8d8d8; }
         .cont .login .login_cont .login_input form {
           display: flex;
           flex-direction: column;
@@ -183,7 +192,10 @@ body {
           outline: none;
           border-radius: 9px;
           font-size: 15px;
-          color: #fff; }
+          color: #fff;
+          cursor: pointer; }
+        .cont .login .login_cont .login_input .but:hover, .cont .login .login_cont .login_input .login_sm .codeContent .code_success .secondary_btn:hover, .cont .login .login_cont .login_sm .codeContent .code_success .login_input .secondary_btn:hover {
+          opacity: .5; }
         .cont .login .login_cont .login_input .zc {
           background: transparent;
           color: #2ad181; }
@@ -196,7 +208,7 @@ body {
           line-height: 1;
           color: #9b9b9b;
           position: relative;
-          width: 72px;
+          width: 84px;
           margin: 0 auto; }
         .cont .login .login_cont .login_fx .login_fx_bt::before {
           content: "";
