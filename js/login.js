@@ -51,7 +51,7 @@ window.onload = function(){
 	//密码的显示隐藏
 	$("#pass_ycxs").click(function(){
 		if($("#pass").eq(0).attr("type") == "text"){
-			$("#pass").eq(0).attr({"type":"pawssword"});
+			$("#pass").eq(0).attr({"type":"password"});
 		}else{
 			$("#pass").eq(0).attr({"type":"text"});
 		}
@@ -67,7 +67,7 @@ window.onload = function(){
 	});
 	//判断是否登录成功
 	$("#login_btn").click(function(){
-		$.post("php/login.php", {"userId":'$("#phone")[0]',"passId":'$("#pass")[0]'},loginCg);
+		$.post("php/login.php", {"userId":$("#phone").val(),"passId":$("#pass").val()},loginCg);
 	});
 	//成功后执行
 	function loginCg(data){

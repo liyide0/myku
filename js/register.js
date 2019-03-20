@@ -1,4 +1,9 @@
 window.onload = function(){
+	//定义变量确定账号密码是否按要求填写
+	var zhangHu = false;
+	var miMa = false;
+	var qrMiMa = false;
+	var isxieYi = false;
 	//中英文页面切换
 	$("#zyqh_btu").click(function(){
 		$(".changeBox").eq(0).toggle();
@@ -62,32 +67,132 @@ window.onload = function(){
 		}
 		box.appendChild(divDom);
 	}
+	//判断手机号是否注册过
+	function sfzc(data){
+		if(data == "0"){
+			$("#cwts").html("账号可以使用");
+			$("#cwts").css({"opacity":1});
+		}else{
+			$("#cwts").html("账号已注册");
+			$("#cwts").css({"opacity":1});
+		}
+	}
+	//判断手机号是否正确
+	$("#phone").blur(function(){
+		//手机的规则：11位数字，1开头
+		let sj = /^1[1-9]\d{9}$/;
+		//电子邮箱的规则：至少3个数字字母下划线@至少2个数字字母下划线.(com|cn|net|com.cn)
+		let yx = /^\w{3,}@\w{2,}\.(com|cn|net|com\.cn)$/;
+		if($("#phone").val() != ""){
+			if(sj.test(this.value) || yx.test(this.value)){
+				zhangHu = true;
+				$.post("php/registerId.php", {"userId":$("#phone").val()},sfzc);
+			}else{
+				$("#cwts").html("手机号或者邮箱格式错误");
+
+				$("#cwts").css({"opacity":1});
+				zhangHu = false;
+			}
+		}else{
+			$("#cwts").css({"opacity":1});
+			$("#cwts").html("手机号或者邮箱不能为空");
+			zhangHu = false;
+		}
+	});
+	//密码的规则：密码由6-16位数字、字母或符号组成、至少包含两种字符
+	$("#pass").blur(function(){
+		let mm = /^[a-zA-Z0-9]\w{5,14}$/;
+		if($("#pass").val() != ""){
+			if(mm.test(this.value)){
+				$("#region_tip").html("√");
+				$("#region_tip").css({"color":"greenyellow","opacity":1});
+				miMa = true;
+			}else{
+				$("#region_tip").html("密码格式错误");
+				$("#region_tip").css({"color":"red","opacity":1});
+				miMa = false;
+			}
+		}else{
+			$("#region_tip").html("密码不能为空");
+			$("#region_tip").css({"color":"red","opacity":1});
+			miMa = false;
+		}
+	});
 	//密码的显示隐藏
 	$("#pass_ycxs").click(function(){
 		if($("#pass").eq(0).attr("type") == "text"){
-			$("#pass").eq(0).attr({"type":"pawssword"});
+			$("#pass").eq(0).attr({"type":"password"});
 		}else{
 			$("#pass").eq(0).attr({"type":"text"});
 		}
 	});
 	$("#pass_zc").click(function(){
 		if($("#pass_zcqr").eq(0).attr("type") == "text"){
-			$("#pass_zcqr").eq(0).attr({"type":"pawssword"});
+			$("#pass_zcqr").eq(0).attr({"type":"password"});
 		}else{
 			$("#pass_zcqr").eq(0).attr({"type":"text"});
 		}
 	});
-	//判断是否注册成功
+	//判断两次输入的密码是否一样
+	$("#pass_zcqr").blur(function(){
+		if($("#pass").val() == $("#pass_zcqr").val()){
+			$("#zcsr").html("两次密码一样");
+			$("#zcsr").css({"color":"greenyellow","opacity":1});
+			qrMiMa = true;
+		}else{
+			$("#zcsr").html("两次密码不一样");
+			$("#zcsr").css({"color":"red","opacity":1});
+			qrMiMa = false;
+		}
+	});
+	//判断是否勾选协议
+	$("#checkbox").click(function(){
+		let isNo = $(this).attr("checked");
+		if(isNo == undefined){
+			isxieYi = true;
+			$("#checkbox").attr({"checked":"checked"});
+		}else{
+			isxieYi = false;
+			$("#checkbox").removeAttr("checked");
+		}
+	});
+	var zhangHu = false;
+	var miMa = false;
+	var qrMiMa = false;
+	var isxieYi = false;
+	//判断是否都填写
 	$("#but").click(function(){
-		$.post("php/register.php", {"userPhone":$("#phone").val(),"userPass":$("#pass").val()},loginCg);
-		alert($("#phone").val());
-		alert($("#pass").val());
+		if(zhangHu == true && miMa == true && qrMiMa == true && isxieYi == true){
+			//判断是否注册成功
+			$.post("php/register.php", {"userPhone":$("#phone").val(),"userPass":$("#pass").val()},loginCg);
+		}else{
+			if(zhangHu == true){
+				$("#phone").css({"border":"none"})
+				if(miMa == true){
+					$("#pass").css({"border":"none"})
+					if(qrMiMa == true){
+						$("#pass_zcqr").css({"border":"none"})
+						if(isxieYi == true){
+							$("#checkbox").css({"border":"none"})
+						}else{
+							$("#checkbox").css({"border":"1px solid rde"})
+						}
+					}else{
+						$("#pass_zcqr").css({"border":"1px solid rde"})
+					}
+				}else{
+					$("#pass").css({"border":"1px solid rde"})
+				}
+			}else{
+				$("#phone").css({"border":"1px solid rde"})
+			}
+		}
 	});
 	//成功后执行
 	function loginCg(data){
 		if(data == "1"){
 			$(".loginTips").eq(0).css({"opacity":0});
-			location.href="../login.html";
+			location.href="login.html";
 		}else{
 			$(".loginTips").eq(0).css({"opacity":1});
 		}

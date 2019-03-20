@@ -10,7 +10,7 @@
 		mysql_select_db("oppo",$conn);
 		
 		$sqlstr = "insert into zhanghu(vipPhone,vipPass)
-		values('$userPhone','$userPass',);";
+       values('$userPhone','$userPass')";
 		
 		$res = mysql_query($sqlstr,$conn);
 		

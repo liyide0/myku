@@ -246,7 +246,7 @@ body{
 					width: 0;
 					height: 0;
 					border: 8px solid transparent;
-					border-top-color:#f7f7f7; 
+					border-top-color:#d8d7d7; 
 				}
 			}
 			.phone_gj{
@@ -324,9 +324,18 @@ body{
 				box-sizing: border-box;
 				text-indent: 16px;
 				font-size: 14px;
-				color: #000;
+				color: #000 ;
 				border: none;
 				outline: 0;
+			}
+			.cwts{
+				width: 342px;
+				margin: 6px auto 12px;
+				opacity: .4;
+				font-family: sans-serif;
+				font-size: 12px;
+				color: red;
+				opacity: 0;
 			}
 			.input{
 				position: relative;
@@ -377,6 +386,9 @@ body{
 				color: #000;
 				padding-right: 35px;
 			}
+			.zcsr{
+				opacity: 0;
+			}
 			.icon-xianshimima{
 				position: absolute;
 				bottom: 12px;
@@ -401,6 +413,7 @@ body{
 				line-height: 14px;
 				padding-left: 22px;
 				box-sizing: border-box;
+				margin-top: 24px;
 				.fx{
 					position: absolute;
 					width: 16px;
@@ -418,11 +431,12 @@ body{
 			}
 			.loginTips{
 				width: 285px;
-				margin: 23px auto 0;
+				margin:0 auto;
 				font-size: 12px;
 				color: #ec5b66;
-				text-align: center;
+				// text-align: center;
 				opacity: 0;
+				margin-top: 10px;
 			}
 			.button{
 				position: relative;
@@ -437,7 +451,7 @@ body{
 				font-size: 15px;
 				color: #fff;
 				background-color: #2ad181;
-				margin-top: 37px;
+				margin-top: 10px;
 				opacity: .3;
 				cursor: pointer;
 			}
