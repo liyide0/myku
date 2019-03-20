@@ -4,22 +4,48 @@ window.onload = function(){
 	var miMa = false;
 	var qrMiMa = false;
 	var isxieYi = false;
+	var yanZhengMa = false;
 	//中英文页面切换
 	$("#zyqh_btu").click(function(){
 		$(".changeBox").eq(0).toggle();
 	});
 	//显示国家
+	function fun1(obj){
+		 obj.css({"border-top-color":"transparent","border-bottom-color":"#dcdcdc","top":"16px"});
+	};
+	function fun2(obj){
+		 obj.css({"border-bottom-color":"transparent","border-top-color":"#dcdcdc","top":"22px"});
+	};
+	//按钮的旋转
 	$(".zoneInput_down").click(function(){
-		$("#gj").eq(0).toggle();
+		$("#gj").toggle(500,function(){
+			if($("#gj").css("display") == "block"){
+				fun1($(".zoneInput_down"));
+			}else{
+				fun2($(".zoneInput_down"));
+			}
+		});
+		
 	});
 	let boxDom = document.getElementById("gj");
 	let arr = ["A","B","C","D","E","F","G","H","J","K","L","M","N","O"];
 	for(let i=0;i<15;i++){
 		gj(boxDom,17,arr[i]);
 	}
-	//在输入框输入首字母显示地区
+	//在输入框输入字显示地区
+	let dq = [];
+	for(let i=0;i<$("#gj").children().length;i++){
+		for(let y=1;y<$("#gj").children().eq(i).children().length;y++){
+			dq.push($("#gj").children().eq(i).children().eq(y).html());
+		}
+	}
 	$("#ss").focus(function(){
 		$(this).keyup(function(){
+			for(){
+				if($(this).val().{
+				
+				}
+			}
 			
 		});
 	});
@@ -29,7 +55,14 @@ window.onload = function(){
 			$(this).css({"text-indent":"82px"});
 			$(".phone_qh").eq(0).css({"display":"block"});
 			$("#xlb").click(function(){
-				$("#phone_gj").eq(0).toggle();
+				$("#phone_gj").eq(0).toggle(500,function(){
+					if($("#phone_gj").css("display") == "block"){
+						fun1($("#xlb"));
+					}else{
+						fun2($("#xlb"));
+					}
+				});
+				
 			});
 		}else{
 			$(this).css({"text-indent":"13px"});
@@ -60,6 +93,7 @@ window.onload = function(){
 		for(let i=0;i<num;i++){
 			let liDom = document.createElement("li");
 			liDom.innerHTML = "中国";
+			liDom.className = "lis";
 			ulDom.appendChild(liDom);
 			let spanDom = document.createElement("span");
 			spanDom.innerHTML = "+"+86;
@@ -98,6 +132,32 @@ window.onload = function(){
 			$("#cwts").html("手机号或者邮箱不能为空");
 			zhangHu = false;
 		}
+	});
+	//随机生成验证码
+	function yzm(n){
+		var arr=["a","b","c","d","e","f","g","h","0","1","2","3","4","5","6","7","8","9","i"];
+		var yz="";
+		for(var i=0;i<n;i++){
+			var zm = parseInt(Math.random()*arr.length);
+			yz += arr[zm];
+		}
+		return yz;
+	}
+	//判断验证码
+	$("#yanZheng").click(function(){
+		let a = yzm(4);
+		$("#yanZheng").html(a);
+		$("#yz").blur(function(){
+			if(a == $("#yz").val()){
+				$("#yzm").html("验证正确");
+				$("#yzm").css({"opacity":1,"color":"greenyellow"});
+				yanZhengMa = true;
+			}else{
+				$("#yzm").html("验证错误");				
+				$("#yzm").css({"opacity":1});							yanZhengMa = false;
+			}
+		});
+		
 	});
 	//密码的规则：密码由6-16位数字、字母或符号组成、至少包含两种字符
 	$("#pass").blur(function(){
@@ -162,7 +222,7 @@ window.onload = function(){
 	var isxieYi = false;
 	//判断是否都填写
 	$("#but").click(function(){
-		if(zhangHu == true && miMa == true && qrMiMa == true && isxieYi == true){
+		if(zhangHu == true && miMa == true && qrMiMa == true && isxieYi == true && yanZhengMa == true){
 			//判断是否注册成功
 			$.post("php/register.php", {"userPhone":$("#phone").val(),"userPass":$("#pass").val()},loginCg);
 		}else{
@@ -184,7 +244,7 @@ window.onload = function(){
 					$("#pass").css({"border":"1px solid rde"})
 				}
 			}else{
-				$("#phone").css({"border":"1px solid rde"})
+				$("#phone").css({"border-width":"1px","border-color":"red"})
 			}
 		}
 	});

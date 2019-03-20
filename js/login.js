@@ -4,12 +4,24 @@ window.onload = function(){
 		$(".changeBox").eq(0).toggle();
 	});
 	//输入内容显示地区
+	function fun1(obj){
+		 obj.css({"border-top-color":"transparent","border-bottom-color":"#dcdcdc","top":"16px"});
+	};
+	function fun2(obj){
+		 obj.css({"border-bottom-color":"transparent","border-top-color":"#dcdcdc","top":"22px"});
+	};
 	$("#phone").change(function(){
 		if($("#phone").val().length >= 6){
 			$(this).css({"text-indent":"82px"});
 			$(".phone_qh").eq(0).css({"display":"block"});
 			$("#xlb").click(function(){
-				$("#gj").eq(0).toggle();
+				$("#gj").eq(0).toggle(500,function(){
+					if($("#gj").css("display") == "block"){
+						fun1($("#xlb"));
+					}else{
+						fun2($("#xlb"));
+					}
+				});
 			});
 		}else{
 			$(this).css({"text-indent":"13px"});
@@ -29,6 +41,7 @@ window.onload = function(){
 			
 		});
 	});
+	
 	function gj(box,num,gjszm){
 		let divDom = document.createElement("div");
 		divDom.style.width = "100%";
