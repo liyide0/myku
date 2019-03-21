@@ -25,7 +25,7 @@
 					</a>
 				</section>
 				<section class="nav_box">
-					<ul class="nav_cd">
+					<ul id="nav" class="nav_cd">
 						<li><a href="#">手机</a></li>
 						<li><a href="#">品牌</a></li>
 						<li><a href="#">商城</a></li>
@@ -38,7 +38,7 @@
 					</ul>
 				</section>
 				
-				<a href="#" class="nav_gw">
+				<a id="nav_gw" href="#" class="nav_gw">
 					<span class="iconfont icon-gouwudai"></span>
 				</a>
 				<section class="nav_gw_xlb">
@@ -68,10 +68,11 @@
 				</section>
 			</nav>
 			<!-- banner -->
-			<ul class="banner">
+			<div id="banner_box">
+				<ul id="banner" class="banner">
 				<li>
 					<img src="imgs/index/banner/201901151101125c3d57489fcac.jpg">
-					<img src="imgs/index/banner_min/201901151101165c3d574c74ef1.jpg">
+					<!-- <img src="imgs/index/banner_min/201901151101165c3d574c74ef1.jpg"> -->
 					<section class="bt">
 						<a href="#"></a>
 						<section>
@@ -83,7 +84,7 @@
 				</li>
 				<li>
 					<img src="imgs/index/banner/201903010103235c781ccb122a4.jpg">
-					<img src="imgs/index/banner_min/201902060902355c5a387f7ff9c.jpg">
+					<!-- <img src="imgs/index/banner_min/201902060902355c5a387f7ff9c.jpg"> -->
 					<section class="bt">
 						<a href="#"></a>
 						<section>
@@ -95,7 +96,7 @@
 				</li>
 				<li>
 					<img src="imgs/index/banner/201812061012405c08837c8cbe8.jpg">
-					<img src="imgs/index/banner_min/201812061012465c088382669ba.jpg">
+					<!-- <img src="imgs/index/banner_min/201812061012465c088382669ba.jpg"> -->
 					<section class="bt">
 						<a href="#"></a>
 						<section>
@@ -107,7 +108,7 @@
 				</li>
 				<li>
 					<img src="imgs/index/banner/201903071203115c7ff11fbf16b.jpg">
-					<img src="imgs/index/banner_min/201903071203185c7ff126bdadf.jpg">
+					<!-- <img src="imgs/index/banner_min/201903071203185c7ff126bdadf.jpg"> -->
 					<section class="bt">
 						<a href="#"></a>
 						<section>
@@ -119,7 +120,7 @@
 				</li>
 				<li>
 					<img src="imgs/index/banner/201810190910355bc9d9331cdec.jpg">
-					<img src="imgs/index/banner_min/201810190910445bc9d93c38577.jpg">
+					<!-- <img src="imgs/index/banner_min/201810190910445bc9d93c38577.jpg"> -->
 					<section class="bt">
 						<a href="#"></a>
 						<section>
@@ -129,14 +130,15 @@
 						</section>
 					</section>
 				</li>
-				<div class="banner_nav">
-					<a href="#"></a>
-					<a href="#"></a>
-					<a href="#"></a>
-					<a href="#"></a>
-					<a href="#"></a>
-				</div>
+				<ul id="banner_nav" class="banner_nav">
+					<li index="0" href="#"></li>
+					<li index="1" href="#"></li>
+					<li index="2" href="#"></li>
+					<li index="3" href="#"></li>
+					<li index="4" href="#"></li>
+				</ul>
 			</ul>
+			</div>
 		</header>
 		<!-- 主体 推荐商品-->
 		<section class="cont">
@@ -567,3 +569,5 @@
 		</footer>		
 	</body>
 </html>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/mall.js"></script>
