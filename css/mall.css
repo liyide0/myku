@@ -114,14 +114,15 @@ header{
 	font-size: 15px;
 }
 /* banner */
-.banner_nav{
+.banner_box{
 	height: 600px;
+	overflow: hidden;
 }
 .banner{
 	width: 100%;
 	height: 600px;
 	overflow: hidden;
-	position: absolute;
+	position: relative;
 	display: flex;
 	flex-wrap: nowrap;
 }
@@ -185,6 +186,7 @@ header{
     z-index: 2;
 }
 .banner_nav li{
+	position: relative;
 	display: block;
 	width: 10px;
 	height: 10px;
@@ -217,6 +219,7 @@ header{
     flex-shrink: 0;
 }
 .shop_tup img{
+	position: absolute;
 	width: 100%;
 	height: 100%;
 }
@@ -229,10 +232,11 @@ header{
 	border: 1px solid #f79a47;
 	text-align: center;
 	line-height: 30px;
-	background: #716ac5;
+	background: #dcdcdc;
 	position: absolute;
 	left: 40px;
 	top: 40px;
+	z-index: 3;
 }
 .shop_bt{
 	width: 50%;
@@ -240,6 +244,7 @@ header{
 	position: absolute;
 	top: 0;
 	right: 0;
+	z-index: 3;
 }
 .shop_bt section{
 	width: 100%;
@@ -273,11 +278,12 @@ header{
 	border-radius: 50%;
 	float: left;	
 	position: relative;
+	cursor: pointer;
 }
 .shop_bt .shop_doudou li:first-child{
 	border-color: #a37afe;
 }
-.shop_bt .shop_doudou li a{
+.shop_bt .shop_doudou li i{
 	display: inline-block;
 	width: 14px;
 	height: 14px;
@@ -289,7 +295,7 @@ header{
 	margin-top: -7px;
 	margin-left: -7px;
 }
-.shop_bt .shop_doudou li:first-child a{
+.shop_bt .shop_doudou li:first-child i{
 	background-color: rgb(163, 122, 254);
 	background-image: linear-gradient(to right bottom, rgb(163, 122, 254), rgb(108, 230, 226));
 }

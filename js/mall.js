@@ -80,7 +80,7 @@ window.onload = function(){
 		$(this).css({"color":"#1a1a1a"});
 	});
 	
-	
+	//大轮播图
 	autoPlay();
 	$1("#banner").onmouseenter = function(){
 		stopPlay();
@@ -94,9 +94,29 @@ window.onload = function(){
 			goImg(this.getAttribute("index"));
 		}
 	}
-	
+	let colorBox = ["#a37afe","#02928f","#00312f"];
+	minLunBot($1("#douDou"),$1("#shop_xy_tp"),colorBox);
 }
-
+//小轮播图
+	function minLunBot(box,imgBox,colorBox){
+		let lis = box.children;
+		let imgs = imgBox.children;
+		let color = [];
+		for(let i=0;i<lis.length;i++){
+			lis[i].onclick = function(){
+				for(let k=0;k<lis.length;k++){
+					lis[k].style.borderColor = "transparent";
+				}
+				this.style.borderColor = colorBox[$(this).index()];
+				let a = $(this).index()-1;
+				for(let y=0;y<imgs.length;y++){
+					
+					imgs[y].style.zIndex = 0;
+				}
+				imgs[$(this).index()].style.zIndex = 2;
+			}
+		}
+	}
 function $1(str){
 		if(str.startsWith("#")){
 			return document.getElementById(str.substring(1));
