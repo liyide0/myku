@@ -61,8 +61,12 @@ header{
 					.xx_min_box{
 						min-height: 410px;
 						text-align: center;
+						position: relative;
 						.xx_bd{
 							display: inline-block;
+							position: absolute;
+							top: 50%;
+							transform: translate(-50%,-50%);
 							figure{
 								width: 210px;
 								margin: 0;

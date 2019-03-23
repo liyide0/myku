@@ -46,9 +46,13 @@ header {
           min-height: 100px; }
           .con .con_box .con_zhuTi .con_xiangXi .xx_box .xx_min_box {
             min-height: 410px;
-            text-align: center; }
+            text-align: center;
+            position: relative; }
             .con .con_box .con_zhuTi .con_xiangXi .xx_box .xx_min_box .xx_bd {
-              display: inline-block; }
+              display: inline-block;
+              position: absolute;
+              top: 50%;
+              transform: translate(-50%, -50%); }
               .con .con_box .con_zhuTi .con_xiangXi .xx_box .xx_min_box .xx_bd figure {
                 width: 210px;
                 margin: 0; }

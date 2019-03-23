@@ -1,4 +1,4 @@
-body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd,td,input,select,option,textarea{
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd,td,input,select,option,textarea,figure{
 	margin:0;
 	padding:0;
 }
@@ -45,6 +45,10 @@ header{
 	height: 60px;
 	line-height: 60px;
 	left: 82px;
+}
+.log a img{
+	width: 106px;
+	height: 17px;;
 }
 .nav_box{
 	display: inline-block;
@@ -187,6 +191,8 @@ header{
         font-size: 12px; }
         .foot_nav nav dl dd a {
           color: #6f6f6f; }
+		 .foot_nav nav dl dd a:hover{
+			 color: #ACACAC; }
 
 .foot_phone {
   display: inline-block;
@@ -202,6 +208,8 @@ header{
     border-radius: 24px;
     text-align: center;
     margin-bottom: 20px; }
+  .foot_phone a:hover{
+	  background:#3d3d3d; }
   .foot_phone img {
     width: 32px;
     height: 26px;

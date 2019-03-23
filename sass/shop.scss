@@ -1,0 +1,365 @@
+@charset "utf-8";
+header{
+	background: #fff;
+	height: 60px;
+}
+.con{
+	width: 100%;
+	padding: 0 0 100px 0;
+	.con_liBiao{
+		box-sizing: border-box;
+		width: 1200px;
+		background-color: #fff;
+		margin:0 auto;
+		padding: 30px 40px;
+		margin-top: 20px;
+		min-height: 100px;
+		.con_bt{
+			h2{
+				color: #333;
+				font-size: 18px;
+				padding-bottom: 16px;
+			}
+		}
+		.shop_list{
+			border-bottom: 1px #EDEDED solid;
+			border-top: 1px #EDEDED solid;
+			.shop_list_box{
+				padding: 14px 0;
+				position: relative;
+				box-sizing: border-box;
+				.shp-row{
+					width: 100%;
+					box-sizing: border-box;
+					padding: 6px 0;
+					height: 100%;
+					display: flex;
+					-webkit-box-align: center;
+					align-items: center;
+					justify-content: flex-start;
+					-webkit-box-orient: vertical;
+					-webkit-box-pack: center;
+					.select{
+						width: 100px;
+						max-width: 100px;
+						text-align: center;
+						.oc-radio-button{
+							display: inline-block;
+							-webkit-box-align: center;
+							align-items: center;
+							cursor: pointer;
+							.radio-button-input{
+								display: inline-block;
+								width: 24px;
+								height: 24px;
+								line-height: 23px;
+								border: #dce1e4 1px solid;
+								box-sizing: border-box;
+								border-radius: 12px;
+								vertical-align: bottom;
+								text-align: center;
+								background-color: #05B570;
+								border-color: #05B570;
+								.icon-xuanze{
+									color: #fff;
+									font-weight: bold;
+									font-size: 18px;
+								}
+							}
+						}
+					}
+					.image{
+						padding-right: 70px;
+						padding-left: 20px;
+						height: 80px;
+						width: 80px;
+						position: relative;
+						text-align: center;
+						a{
+							color: #333;
+							text-decoration: none;
+							cursor: pointer;
+							-webkit-tap-highlight-color: rgba(0,0,0,0);
+							background-color: transparent;
+							img{
+								width: auto;
+								height: 80px;
+								vertical-align: middle;
+								outline: none;
+								-webkit-user-drag: none;
+							}
+						}
+					}
+					.title{
+						width: 284px;
+						a{
+							display: inline-block;
+							vertical-align: middle;
+							color: #333;
+							text-decoration: none;
+							cursor: pointer;
+							-webkit-tap-highlight-color: rgba(0,0,0,0);
+						}
+						a:hover{
+							color: #ACACAC;
+						}
+					}
+					.standard-width{
+						width: 224px;
+						.price{
+							padding: 4px 0;
+							display: block;
+						}
+					}
+					.increase{
+						.oc-input-number{
+							width: 150px;
+							position: relative;
+							display: inline-block;
+							box-sizing: border-box;
+							border: 1px solid #dce1e4;
+							height: 44px;
+							overflow: hidden;
+							.input-number-minus{
+								position: absolute;
+								left: 0;
+								text-align: center;
+								overflow: hidden;
+								height: 42px;
+								width: 50px;
+							}
+							.input-number-minus::after{
+								    content: '';
+									position: absolute;
+									display: inline-block;
+									width: 12px;
+									height: 2px;
+									background: #666;
+									left: 50%;
+									margin-left: -6px;
+									top: 50%;
+									margin-top: -1px;
+							}
+							.input-number-add{
+								position: absolute;
+								right: 0;
+								text-align: center;
+								cursor: pointer;
+								overflow: hidden;
+								width: 70px;
+								height: 42px;
+							}
+							.input-number-add::before{
+								    content: '';
+									position: absolute;
+									display: inline-block;
+									width: 2px;
+									height: 12px;
+									background: #666;
+									left: 50%;
+									margin-left: -1px;
+									top: 50%;
+									margin-top: -6px;
+							}
+							.input-number-add::after{
+								content: '';
+								position: absolute;
+								display: inline-block;
+								width: 12px;
+								height: 2px;
+								background: #666;
+								left: 50%;
+								margin-left: -6px;
+								top: 50%;
+								margin-top: -1px;
+							}
+							.input-number-input{
+								box-sizing: border-box;
+								position: absolute;
+								height: 100%;
+								left: 0;
+								top: 0;
+								background: transparent;
+								margin: 0;
+								overflow: hidden;
+								input{
+									text-align: center;
+									border: none;
+									width: 100%;
+									height: 100%;
+									font-size: 16px;
+									box-sizing: border-box;
+									padding: 11px 23px;
+									line-height: 1;
+									background-color: transparent;
+									z-index: 1;
+								}
+							}
+						}
+					}
+					.handle{
+						flex: 1;
+						text-align: right;
+						padding-right: 20px;
+						padding-left: 20px;
+						.icon-shanchu{
+							display: inline-block;
+							color: #666;
+							font-size: 24px;
+							cursor: pointer;
+						}
+						.icon-shanchu:hover{
+							color: #ACACAC;
+						}
+					}
+				}
+				.shop_zp{
+					padding: 14px 0;
+					position: relative;
+					box-sizing: border-box;
+					border-top: 1px #EDEDED solid;
+					margin-left: 270px;
+					.shp-row{
+						flex-wrap: wrap;
+						.zp{
+							height: 100%;
+							display: flex;
+							-webkit-box-align: center;
+							align-items: center;
+							justify-content: flex-start;
+							-webkit-box-orient: vertical;
+							-webkit-box-pack: center;
+							.oc-label{
+								display: inline-block;
+								vertical-align: middle;
+								width: auto;
+								padding: 0 .4em;
+								height: 20px;
+								line-height: 1.5;
+								text-align: center;
+								margin-right: 10px;
+								box-sizing: border-box;
+								font-size: 12px;
+								border: 1px #666 solid;
+								border-radius: 2px;
+								overflow: hidden;
+								color: #f79a47 !important;
+								border-color: #f79a47 !important;
+								em{
+									display: inline-block;
+									font-style: normal;
+								}
+							}
+							figure{
+								margin: 0;
+								width: 42px;
+								height: 42px;
+								display: inline-block;
+								vertical-align: middle;
+								margin-right: 10px;														img{
+									width: auto;
+									height: 100%;
+								}
+							}
+							a{
+								-webkit-box-flex: 1;
+								flex: 1;
+								color: #666;
+								display: inline-block;
+								vertical-align: middle;
+							}
+							a:hover{
+								color: #ACACAC;
+							}
+						}
+					}
+				}
+			}
+		}
+		.shop_js{
+			width: 100%;
+			padding-top: 50px;
+			padding-bottom: 20px;
+			display: flex;
+			.shop_js_left{
+				-webkit-box-flex: 1;
+				flex: 1;
+				vertical-align: top;
+				text-align: left;
+				a{
+					color: #333;
+					.icon-tubiaozhizuomoban{
+						font-size: 24px;
+						vertical-align: middle;
+						padding-right: 8px;
+						// color: #333;
+					}
+					h4{
+						// color: #333
+						font-weight: 100;
+						display: inline-block;
+						vertical-align: middle;
+						font-size: 14px;
+					}
+				}
+				a:hover{
+					color: #ACACAC;
+				}
+			}
+			.shp-cartbar-total{
+				vertical-align: top;
+				text-align: right;
+				width: 196px;
+				.cartbar-tota-price{
+					width: 100%;
+					display: table;
+					padding-bottom: 20px;
+					label{
+						text-align: left;
+						display: table-cell;
+						color: #666;
+						span{
+							text-align: left;
+							color: #666;
+						}
+					}
+					strong{
+						color: #333;
+						font-weight: normal;
+						font-size: 30px;
+						display: table-cell;
+						white-space: nowrap;
+						overflow: hidden;
+						width: 150px;
+						max-width: 150px;
+						.rmb-symbol{
+							font-size: 21px;
+						}
+					}
+				}
+				.cartbar-tota-btn{
+					.shop_js_but{
+						width: 196px;
+						height: 60px;
+						line-height: 60px;
+						color: #fff;
+						background-color: #05B570;
+						font-size: 16px;
+						display: inline-block;
+						margin-bottom: 0;
+						text-align: center;
+						vertical-align: middle;
+						touch-action: manipulation;
+						background-image: none;
+						cursor: pointer;
+						box-sizing: border-box;
+						border-radius: 4px;
+					}
+					.shop_js_but:hover{
+						background: #75ffc9;
+					}
+				}
+			}
+		}
+	}
+}
