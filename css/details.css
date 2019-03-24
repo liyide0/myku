@@ -1,0 +1,558 @@
+header {
+  height: 60px;
+  background: #fff; }
+
+.con {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  border-top: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  position: relative; }
+  .con .phone_xq {
+    position: relative;
+    width: 1200px;
+    height: auto;
+    margin: 0 auto; }
+    .con .phone_xq .phone_xq_bt {
+      position: relative;
+      height: 58px;
+      border-bottom: 1px solid #e5e5e5;
+      box-sizing: border-box;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      justify-content: space-between;
+      z-index: 9; }
+      .con .phone_xq .phone_xq_bt span {
+        display: inline-block;
+        font-size: 15px;
+        color: #303030; }
+      .con .phone_xq .phone_xq_bt .phone_xq_nav {
+        position: relative; }
+        .con .phone_xq .phone_xq_bt .phone_xq_nav li {
+          display: inline-block;
+          margin-left: 30px; }
+          .con .phone_xq .phone_xq_bt .phone_xq_nav li a {
+            font-size: 13px;
+            color: #666; }
+    .con .phone_xq .phone_cs {
+      position: relative;
+      display: flex;
+      min-height: 800px; }
+      .con .phone_xq .phone_cs .phone_cs_img {
+        position: relative;
+        width: 560px;
+        display: inline-block;
+        padding-top: 60px;
+        padding-left: 40px; }
+        .con .phone_xq .phone_cs .phone_cs_img .phone_cs_img_box {
+          width: 100%;
+          max-width: 560px; }
+          .con .phone_xq .phone_cs .phone_cs_img .phone_cs_img_box img {
+            width: 560px;
+            height: 560px; }
+        .con .phone_xq .phone_cs .phone_cs_img .phone_cs_img_dt {
+          position: relative;
+          margin-top: 40px; }
+          .con .phone_xq .phone_cs .phone_cs_img .phone_cs_img_dt ul {
+            position: relative;
+            text-align: center;
+            display: flex;
+            margin-bottom: 0;
+            justify-content: center; }
+            .con .phone_xq .phone_cs .phone_cs_img .phone_cs_img_dt ul li {
+              position: relative;
+              display: inline-block;
+              width: 80px;
+              height: 80px;
+              margin: 0 15px;
+              cursor: pointer;
+              opacity: .4; }
+              .con .phone_xq .phone_cs .phone_cs_img .phone_cs_img_dt ul li img {
+                width: 80px;
+                height: 80px; }
+            .con .phone_xq .phone_cs .phone_cs_img .phone_cs_img_dt ul .pci_noe {
+              opacity: 1; }
+          .con .phone_xq .phone_cs .phone_cs_img .phone_cs_img_dt .pci-xb {
+            position: absolute;
+            width: 45px;
+            height: 2px;
+            left: 92px;
+            bottom: 0;
+            right: 0;
+            background-color: #b7b7b7;
+            border-radius: 1px; }
+      .con .phone_xq .phone_cs .phone_cs_right {
+        position: relative;
+        display: inline-block;
+        max-width: 492px;
+        padding-top: 80px;
+        padding-left: 68px;
+        padding-right: 40px;
+        background-color: #fff; }
+        .con .phone_xq .phone_cs .phone_cs_right .phc_r_title {
+          text-align: left;
+          border-bottom: 1px solid #EDEDED; }
+          .con .phone_xq .phone_cs .phone_cs_right .phc_r_title .phone_name {
+            color: #333;
+            font-size: 22px;
+            line-height: 39px;
+            margin-bottom: 7px; }
+          .con .phone_xq .phone_cs .phone_cs_right .phc_r_title .phone_r_text {
+            position: relative;
+            color: #666;
+            display: inline-block;
+            font-size: 14px;
+            line-height: 22px;
+            margin-bottom: 12px; }
+            .con .phone_xq .phone_cs .phone_cs_right .phc_r_title .phone_r_text a {
+              text-decoration: underline;
+              color: #f79a47; }
+          .con .phone_xq .phone_cs .phone_cs_right .phc_r_title .phone_price {
+            color: #333;
+            font-size: 26px;
+            line-height: 30px;
+            margin-bottom: 20px; }
+          .con .phone_xq .phone_cs .phone_cs_right .phc_r_title .phone_method {
+            margin-bottom: 30px;
+            color: #333333;
+            font-size: 14px; }
+            .con .phone_xq .phone_cs .phone_cs_right .phc_r_title .phone_method .method_noe {
+              display: inline-block; }
+              .con .phone_xq .phone_cs .phone_cs_right .phc_r_title .phone_method .method_noe .icon-huabei {
+                color: #333333;
+                margin-right: 4px; }
+            .con .phone_xq .phone_cs .phone_cs_right .phc_r_title .phone_method .method_two {
+              margin-left: 10px;
+              color: #333333; }
+              .con .phone_xq .phone_cs .phone_cs_right .phc_r_title .phone_method .method_two .icon-icon-_yijiuhuanxin {
+                margin-right: 4px;
+                font-weight: 800; }
+        .con .phone_xq .phone_cs .phone_cs_right .Configuration {
+          padding-bottom: 30px; }
+          .con .phone_xq .phone_cs .phone_cs_right .Configuration .config {
+            display: block; }
+            .con .phone_xq .phone_cs .phone_cs_right .Configuration .config .config_name {
+              font-size: 14px;
+              line-height: 14px;
+              color: #666;
+              margin-top: 30px;
+              margin-bottom: 20px; }
+            .con .phone_xq .phone_cs .phone_cs_right .Configuration .config .but_list {
+              display: flex;
+              margin: -10px;
+              flex-wrap: wrap;
+              justify-content: flex-start; }
+              .con .phone_xq .phone_cs .phone_cs_right .Configuration .config .but_list .but_box {
+                margin: 10px;
+                display: inline-block;
+                position: relative;
+                display: inline-block;
+                border-width: 1px;
+                border-style: solid;
+                border-color: #81cdb1;
+                text-align: center;
+                box-sizing: border-box;
+                overflow: hidden;
+                cursor: pointer;
+                border-radius: 8px;
+                width: 236px;
+                height: 44px; }
+                .con .phone_xq .phone_cs .phone_cs_right .Configuration .config .but_list .but_box i {
+                  position: relative;
+                  display: inline-block;
+                  vertical-align: middle;
+                  margin-top: -2px;
+                  margin-right: 0;
+                  border-radius: 50%;
+                  width: 16px;
+                  height: 16px;
+                  background-color: #080d10;
+                  background-image: linear-gradient(to right bottom, #080d10, #0bb3d7); }
+                .con .phone_xq .phone_cs .phone_cs_right .Configuration .config .but_list .but_box span {
+                  position: relative;
+                  line-height: 42px;
+                  font-size: 16px;
+                  color: #333; }
+              .con .phone_xq .phone_cs .phone_cs_right .Configuration .config .but_list .but_two {
+                border-color: #dce1e4; }
+                .con .phone_xq .phone_cs .phone_cs_right .Configuration .config .but_list .but_two .color_two {
+                  background-color: #0c080e;
+                  background-image: linear-gradient(to right bottom, #0c080e, #e21c7d); }
+          .con .phone_xq .phone_cs .phone_cs_right .Configuration .config_optional .but_list .but_box {
+            border-color: #dce1e4; }
+            .con .phone_xq .phone_cs .phone_cs_right .Configuration .config_optional .but_list .but_box .original {
+              color: #b7b7b7;
+              text-decoration: line-through;
+              font-style: normal; }
+          .con .phone_xq .phone_cs .phone_cs_right .Configuration .config_service .but_list .but_box .icon-bangzhu {
+            position: absolute;
+            font-size: 20px;
+            margin-left: 10px; }
+          .con .phone_xq .phone_cs .phone_cs_right .Configuration .config_gift .config_gift_list {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #fcfcfc;
+            overflow: hidden; }
+            .con .phone_xq .phone_cs .phone_cs_right .Configuration .config_gift .config_gift_list .gift_box {
+              position: relative;
+              height: 90px;
+              padding-top: 26px;
+              text-align: center;
+              -webkit-box-flex: 0;
+              flex: 0 0 33.33333%;
+              max-width: 33.33333%; }
+              .con .phone_xq .phone_cs .phone_cs_right .Configuration .config_gift .config_gift_list .gift_box .tp {
+                display: inline-block;
+                width: 42px;
+                height: 42px;
+                margin-bottom: 16px; }
+                .con .phone_xq .phone_cs .phone_cs_right .Configuration .config_gift .config_gift_list .gift_box .tp img {
+                  width: 42px;
+                  height: 42px; }
+              .con .phone_xq .phone_cs .phone_cs_right .Configuration .config_gift .config_gift_list .gift_box p {
+                color: #666;
+                font-size: 14px;
+                line-height: 14px;
+                padding: 0 15px;
+                text-overflow: ellipsis;
+                word-wrap: break-word; }
+          .con .phone_xq .phone_cs .phone_cs_right .Configuration .aging .but_list .but_box {
+            border-color: #dce1e4;
+            display: flex;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            justify-content: center;
+            margin: 5.5px;
+            width: calc(33.3333% - 11px);
+            height: 62px; }
+            .con .phone_xq .phone_cs .phone_cs_right .Configuration .aging .but_list .but_box p {
+              font-size: 12px;
+              line-height: 12px; }
+            .con .phone_xq .phone_cs .phone_cs_right .Configuration .aging .but_list .but_box p:last-of-type {
+              padding-top: 7px;
+              color: #FF763D; }
+          .con .phone_xq .phone_cs .phone_cs_right .Configuration .phone_num .config_num_box {
+            position: relative;
+            display: inline-block;
+            box-sizing: border-box;
+            border: 1px solid #dce1e4;
+            width: 196px;
+            height: 44px;
+            overflow: hidden; }
+            .con .phone_xq .phone_cs .phone_cs_right .Configuration .phone_num .config_num_box .num_input {
+              box-sizing: border-box;
+              position: absolute;
+              height: 100%;
+              left: 0;
+              top: 0;
+              background: transparent;
+              margin: 0;
+              overflow: hidden; }
+              .con .phone_xq .phone_cs .phone_cs_right .Configuration .phone_num .config_num_box .num_input input {
+                text-align: center;
+                border: none;
+                width: 100%;
+                height: 100%;
+                font-size: 14px;
+                box-sizing: border-box;
+                padding: 11px 23px;
+                line-height: 1; }
+            .con .phone_xq .phone_cs .phone_cs_right .Configuration .phone_num .config_num_box .num_input_jian {
+              position: absolute;
+              left: 0;
+              cursor: pointer;
+              text-align: center;
+              overflow: hidden;
+              width: 70px;
+              height: 42px; }
+            .con .phone_xq .phone_cs .phone_cs_right .Configuration .phone_num .config_num_box .num_input_jia {
+              position: absolute;
+              right: 0;
+              text-align: center;
+              cursor: pointer;
+              overflow: hidden;
+              width: 70px;
+              height: 42px; }
+            .con .phone_xq .phone_cs .phone_cs_right .Configuration .phone_num .config_num_box .num_input_jian:after {
+              content: '';
+              position: absolute;
+              display: inline-block;
+              width: 12px;
+              height: 2px;
+              background: #666;
+              left: 50%;
+              margin-left: -6px;
+              top: 50%;
+              margin-top: -1px; }
+            .con .phone_xq .phone_cs .phone_cs_right .Configuration .phone_num .config_num_box .num_input_jia:after {
+              content: '';
+              position: absolute;
+              display: inline-block;
+              width: 12px;
+              height: 2px;
+              background: #666;
+              left: 50%;
+              margin-left: -6px;
+              top: 50%;
+              margin-top: -1px; }
+            .con .phone_xq .phone_cs .phone_cs_right .Configuration .phone_num .config_num_box .num_input_jia:before {
+              content: '';
+              position: absolute;
+              display: inline-block;
+              width: 2px;
+              height: 12px;
+              background: #666;
+              left: 50%;
+              margin-left: -1px;
+              top: 50%;
+              margin-top: -6px; }
+        .con .phone_xq .phone_cs .phone_cs_right .phone_but {
+          padding: 50px 0;
+          display: flex;
+          border-top: 1px solid #EDEDED; }
+          .con .phone_xq .phone_cs .phone_cs_right .phone_but .buying-btn-list {
+            display: flex;
+            margin: -20px; }
+            .con .phone_xq .phone_cs .phone_cs_right .phone_but .buying-btn-list button {
+              width: 196px;
+              height: 60px;
+              line-height: 60px;
+              margin: 20px;
+              border: none;
+              border-radius: 6px;
+              font-size: 18px; }
+            .con .phone_xq .phone_cs .phone_cs_right .phone_but .buying-btn-list .button_noe {
+              color: #666;
+              background-color: #F4F4F4; }
+            .con .phone_xq .phone_cs .phone_cs_right .phone_but .buying-btn-list .button_two {
+              color: #fff;
+              background-color: #05B570; }
+  .con .picture_details {
+    position: relative;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 94px;
+    background-color: #f5f5f5; }
+    .con .picture_details .details_box {
+      position: relative;
+      width: 1200px;
+      height: auto;
+      margin: 0 auto;
+      padding: 30px 22px;
+      background: #fff;
+      overflow: hidden; }
+      .con .picture_details .details_box img {
+        width: 100%;
+        height: auto;
+        vertical-align: middle; }
+
+.comment {
+  position: relative;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 94px;
+  background-color: #f5f5f5;
+  margin-top: -40px; }
+  .comment .comment_box {
+    position: relative;
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px 22px;
+    background: #fff; }
+    .comment .comment_box .comment_min_box {
+      position: relative;
+      width: 100%;
+      background: #fff; }
+      .comment .comment_box .comment_min_box .comment_bt {
+        position: relative;
+        min-height: 158px;
+        display: flex;
+        align-items: center; }
+        .comment .comment_box .comment_min_box .comment_bt .comment_percent {
+          flex: 0 0 22.5%;
+          text-align: center;
+          height: 100%; }
+          .comment .comment_box .comment_min_box .comment_bt .comment_percent h2 {
+            font-size: 56px;
+            line-height: 56px;
+            color: #333; }
+            .comment .comment_box .comment_min_box .comment_bt .comment_percent h2 i {
+              font-size: 18px;
+              line-height: 18px;
+              font-style: normal; }
+          .comment .comment_box .comment_min_box .comment_bt .comment_percent span {
+            font-size: 14px;
+            line-height: 14px;
+            color: #A0A0A0; }
+        .comment .comment_box .comment_min_box .comment_bt .comment_impression {
+          position: relative;
+          height: 100%; }
+          .comment .comment_box .comment_min_box .comment_bt .comment_impression p {
+            margin-bottom: 10px;
+            font-size: 14px;
+            line-height: 14px;
+            color: #A0A0A0; }
+          .comment .comment_box .comment_min_box .comment_bt .comment_impression .comment_but {
+            width: 100%; }
+            .comment .comment_box .comment_min_box .comment_bt .comment_impression .comment_but ul {
+              display: flex;
+              flex-wrap: wrap; }
+              .comment .comment_box .comment_min_box .comment_bt .comment_impression .comment_but ul li {
+                margin-right: 10px;
+                margin-top: 10px;
+                position: relative;
+                display: inline-block;
+                border-width: 1px;
+                border-style: solid;
+                border-color: #dce1e4;
+                text-align: center;
+                box-sizing: border-box;
+                overflow: hidden;
+                cursor: pointer;
+                width: 105px;
+                height: 44px;
+                border-radius: 8px; }
+                .comment .comment_box .comment_min_box .comment_bt .comment_impression .comment_but ul li span {
+                  position: relative;
+                  font-size: 13px;
+                  line-height: 40px;
+                  padding: 0 14px;
+                  color: #666; }
+                  .comment .comment_box .comment_min_box .comment_bt .comment_impression .comment_but ul li span i {
+                    font-style: normal; }
+      .comment .comment_box .comment_min_box .comment_nav {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        min-height: 40px;
+        background-color: #fcfcfb;
+        padding-left: 270px;
+        padding-right: 40px; }
+        .comment .comment_box .comment_min_box .comment_nav .comment_nav_left {
+          display: inline-block; }
+          .comment .comment_box .comment_min_box .comment_nav .comment_nav_left a {
+            position: relative;
+            line-height: 40px;
+            margin-right: 104px;
+            color: #A0A0A0;
+            transition: color 0.35s ease;
+            font-size: 13px; }
+            .comment .comment_box .comment_min_box .comment_nav .comment_nav_left a span {
+              position: absolute; }
+        .comment .comment_box .comment_min_box .comment_nav .comment_nav_evaluation {
+          position: relative;
+          height: 40px;
+          display: flex;
+          -webkit-box-align: center;
+          align-items: center;
+          font-size: 14px;
+          z-index: 2; }
+          .comment .comment_box .comment_min_box .comment_nav .comment_nav_evaluation a {
+            color: #333; }
+          .comment .comment_box .comment_min_box .comment_nav .comment_nav_evaluation .type-list {
+            position: absolute;
+            display: none;
+            visibility: hidden;
+            opacity: 0;
+            top: 0;
+            padding: 3px 15px;
+            padding-bottom: 6px;
+            margin: 0 -15px;
+            background-color: #fff;
+            box-shadow: 0 6px 60px rgba(153, 160, 169, 0.3);
+            overflow: hidden; }
+            .comment .comment_box .comment_min_box .comment_nav .comment_nav_evaluation .type-list a {
+              color: #333333;
+              position: relative;
+              display: inline-block;
+              line-height: 14px;
+              padding: 6px 0; }
+      .comment .comment_box .comment_min_box .commentSection {
+        display: block; }
+        .comment .comment_box .comment_min_box .commentSection .commentSection_box li {
+          display: flex;
+          padding-top: 24px;
+          margin: 0 40px;
+          box-sizing: border-box;
+          border-bottom: 1px solid #EDEDED; }
+          .comment .comment_box .comment_min_box .commentSection .commentSection_box li div {
+            display: inline-block; }
+          .comment .comment_box .comment_min_box .commentSection .commentSection_box li .sectio_left {
+            position: relative;
+            display: inline-table;
+            width: 230px; }
+            .comment .comment_box .comment_min_box .commentSection .commentSection_box li .sectio_left .user-tx {
+              position: relative;
+              display: inline-block;
+              width: 35px;
+              height: 35px;
+              border-radius: 50%;
+              overflow: hidden;
+              float: left;
+              z-index: 1; }
+            .comment .comment_box .comment_min_box .commentSection .commentSection_box li .sectio_left .user-name {
+              padding-left: 55px;
+              font-size: 16px;
+              line-height: 35px;
+              display: block;
+              color: #666; }
+            .comment .comment_box .comment_min_box .commentSection .commentSection_box li .sectio_left .score {
+              position: relative;
+              display: block;
+              padding-left: 55px;
+              height: 22px; }
+              .comment .comment_box .comment_min_box .commentSection .commentSection_box li .sectio_left .score .icon-star_full {
+                font-size: 22px;
+                color: #f79a47;
+                margin-left: -7px; }
+          .comment .comment_box .comment_min_box .commentSection .commentSection_box li .sectio_right {
+            position: relative;
+            width: 760px;
+            padding-right: 140px;
+            padding-bottom: 30px; }
+            .comment .comment_box .comment_min_box .commentSection .commentSection_box li .sectio_right .sectio_text {
+              font-size: 14px;
+              color: #666;
+              line-height: 28px; }
+            .comment .comment_box .comment_min_box .commentSection .commentSection_box li .sectio_right .sectio_date {
+              position: absolute;
+              font-size: 12px;
+              line-height: 12px;
+              color: #A0A0A0;
+              top: 8px;
+              right: 0; }
+            .comment .comment_box .comment_min_box .commentSection .commentSection_box li .sectio_right .buyers_img {
+              display: flex;
+              justify-content: flex-start;
+              flex-wrap: wrap; }
+              .comment .comment_box .comment_min_box .commentSection .commentSection_box li .sectio_right .buyers_img li {
+                width: 88px;
+                height: 88px;
+                border-radius: 2px;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                margin-top: 20px;
+                margin-right: 24px;
+                text-align: center;
+                cursor: pointer; }
+                .comment .comment_box .comment_min_box .commentSection .commentSection_box li .sectio_right .buyers_img li img {
+                  width: 88px;
+                  height: 88px;
+                  vertical-align: middle; }
+            .comment .comment_box .comment_min_box .commentSection .commentSection_box li .sectio_right .sectio_official {
+              background-color: #f5f5f5;
+              margin-top: 30px;
+              padding: 25px; }
+              .comment .comment_box .comment_min_box .commentSection .commentSection_box li .sectio_right .sectio_official p {
+                font-size: 14px;
+                color: #A0A0A0;
+                line-height: 28px; }
+                .comment .comment_box .comment_min_box .commentSection .commentSection_box li .sectio_right .sectio_official p span {
+                  color: #666; }
+
+/*# sourceMappingURL=details.css.map */
